@@ -76,7 +76,7 @@ public class BoardDAO {
 		try {
 			conn = JDBCUtil.getConnection();
 			stmt = conn.prepareStatement(BOARD_GET);
-			stmt.setInt(1, seg-1);
+			stmt.setInt(1, seg);
 			rs = stmt.executeQuery();
 			if(rs.next()) {
 				one.setSeg(rs.getInt("seg"));
