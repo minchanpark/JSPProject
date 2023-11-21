@@ -7,7 +7,7 @@
 		int id = Integer.parseInt(sid);
 
 		BoardVO u = new BoardVO();
-		u.setSeg(id);
+		u.setSeq(id);
 
 		BoardDAO boardDAO = new BoardDAO();
 		boardDAO.deleteBoard(u);

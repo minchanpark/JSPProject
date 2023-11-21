@@ -55,14 +55,14 @@
 </tr>
 <c:forEach items="${list}" var="u">
 	<tr>
-        <td>${u.getSeg()}</td>
+        <td>${u.getSeq()}</td>
         <td>${u.getCategory()}</td>
         <td>${u.getTitle()}</td>
 		<td>${u.getWriter()}</td>
 		<td>${u.getContent()}</td>
 		<td>${u.getRegdate()}</td>
-		<td><a href="editform.jsp?id=${u.getSeg()}">Edit</a></td>
-		<td><a href="javascript:delete_ok('${u.getSeg()}')">Delete</a></td>
+		<td><a href="editform.jsp?id=${u.getSeq()}">Edit</a></td>
+		<td><a href="javascript:delete_ok('${u.getSeq()}')">Delete</a></td>
 	</tr>
 </c:forEach>
 </table>

@@ -17,7 +17,7 @@
 
 <h1>Edit Form</h1>
 <form action="editpost.jsp" method="post">
-<input type="hidden" name="seg" value="<%=u.getSeg() %>"/>
+<input type="hidden" name="seg" value="<%=u.getSeq() %>"/>
 <table>
 	<tr><td>Category:</td><td><input type="text" name="category" value="<%= u.getCategory()%>"/></td></tr>
 <tr><td>Title:</td><td><input type="text" name="title" value="<%= u.getTitle()%>"/></td></tr>
